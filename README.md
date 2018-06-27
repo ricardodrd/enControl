@@ -5,7 +5,7 @@ l. Altillo:
   b. nevera_alta_1
   c. nevera alta n2 
   d. nevera alta n1
-  e. arcon n4 encima telefono
+  e. arcon n4 encima telefon
   f. arcon n3 pasillo
   g. arcon n2 desde final pasillo 
   h. arcon n1 final pasillo 
