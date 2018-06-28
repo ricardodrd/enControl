@@ -1,34 +1,49 @@
 
     body {
-        font: 10px sans-serif;
+      background-color: #111;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
 li{
-  font: 15px sans-serif;
+  font: 15px helvetica;
+  color: #aaa;
+}
+h1{
+  color: #aaa;
+  font-family: helvetica;
 }
     .axis path,
     .axis line {
         fill: none;
-        stroke: #000;
+        stroke: #aaa;
         shape-rendering: crispEdges;
     }
 
     .x.axis path {
         display: none;
     }
-
+    .x.axis text,
+    .y.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+    fill: #aaa;
+    }
     .line {
         fill: none;
         stroke: steelblue;
-        stroke-width: 1.5px;
+        stroke-width: 3.5px;
     }
     svg{
-        border:1px solid black;
+        border:1px solid white;
     }
     .grid {
         fill: none;
         shape-rendering: crispEdges;
         stroke: lightgrey;
-        opacity: 0.7;
+        opacity: 0.2;
         stroke-width: 1px;
     }
     .segmentText{
