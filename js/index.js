@@ -1,31 +1,120 @@
  var Data = [
                 {
-                    "name": "INFOSYS",
+                    "name": "never alta n2",
                     "WeeklyData": [
-                        { "week": "06 Apr 2015", "value": 1120 },
-                        { "week": "13 Apr 2015", "value": 1240 },
-                        { "week": "20 Apr 2015", "value": 1400 },
-                        { "week": "27 Apr 2015", "value": 1500 }
+                        { "hour": "13:00", "value": 26 },
+                        { "hour": "12:00", "value": 79 },
+                        { "hour": "11:00", "value": 79 },
+                        { "hour": "10:00", "value": 50 },
+                        { "hour": "09:00", "value": 53 },
+                        { "hour": "08:00", "value": 52 },
+                        { "hour": "07:00", "value": 38 },
+                        { "hour": "06:00", "value": 40 },
+                        { "hour": "05:00", "value": 39 },
+                        { "hour": "04:00", "value": 50 },
+                        { "hour": "03:00", "value": 56 },
+                        { "hour": "02:00", "value": 51 },
+                        { "hour": "01:00", "value": 40 },
+                        { "hour": "00:00", "value": 36 }
                     ]
                 },
                 {
-                    "name": "GOOGLE",
+                    "name": "nevera alta n1",
                     "WeeklyData": [
-                        { "week": "06 Apr 2015", "value": 1220 },
-                        { "week": "13 Apr 2015", "value": 1500 },
-                        { "week": "20 Apr 2015", "value": 1610 },
-                        { "week": "27 Apr 2015", "value": 1700 }
+                        { "hour": "13:00", "value": 104 },
+                        { "hour": "12:00", "value": 101 },
+                        { "hour": "11:00", "value": 102 },
+                        { "hour": "10:00", "value": 98 },
+                        { "hour": "09:00", "value": 98 },
+                        { "hour": "08:00", "value": 98 },
+                        { "hour": "07:00", "value": 97 },
+                        { "hour": "06:00", "value": 98 },
+                        { "hour": "05:00", "value": 93 },
+                        { "hour": "04:00", "value": 102 },
+                        { "hour": "03:00", "value": 87 },
+                        { "hour": "02:00", "value": 111 },
+                        { "hour": "01:00", "value": 100 },
+                        { "hour": "00:00", "value": 101 }
                     ]
                 },
                 {
-                    "name": "HCL",
+                    "name": "arcon n4",
                     "WeeklyData": [
-                        { "week": "06 Apr 2015", "value": 1020 },
-                        { "week": "13 Apr 2015", "value": 1350 },
-                        { "week": "20 Apr 2015", "value": 1160 },
-                        { "week": "27 Apr 2015", "value": 1300 }
+                        { "hour": "13:00", "value": 28 },
+                        { "hour": "12:00", "value": 28 },
+                        { "hour": "11:00", "value": 29 },
+                        { "hour": "10:00", "value": 28 },
+                        { "hour": "09:00", "value": 23 },
+                        { "hour": "08:00", "value": 0 },
+                        { "hour": "07:00", "value": 0 },
+                        { "hour": "06:00", "value": 0 },
+                        { "hour": "05:00", "value": 0 },
+                        { "hour": "04:00", "value": 0 },
+                        { "hour": "03:00", "value": 0 },
+                        { "hour": "02:00", "value": 0 },
+                        { "hour": "01:00", "value": 0 },
+                        { "hour": "00:00", "value": 0 }
                     ]
                 },
+                {
+                    "name": "arcon n2 final pasillo",
+                    "WeeklyData": [
+                        { "hour": "13:00", "value": 169 },
+                        { "hour": "12:00", "value": 157 },
+                        { "hour": "11:00", "value": 150 },
+                        { "hour": "10:00", "value": 121 },
+                        { "hour": "09:00", "value": 131 },
+                        { "hour": "08:00", "value": 167 },
+                        { "hour": "07:00", "value": 167 },
+                        { "hour": "06:00", "value": 128 },
+                        { "hour": "05:00", "value": 142 },
+                        { "hour": "04:00", "value": 117 },
+                        { "hour": "03:00", "value": 93 },
+                        { "hour": "02:00", "value": 133 },
+                        { "hour": "01:00", "value": 151 },
+                        { "hour": "00:00", "value": 117 }
+                    ]
+                },
+                {
+                    "name": "arcon n1 final pasillo",
+                    "WeeklyData": [
+                        { "hour": "13:00", "value": 131 },
+                        { "hour": "12:00", "value": 129 },
+                        { "hour": "11:00", "value": 127 },
+                        { "hour": "10:00", "value": 126 },
+                        { "hour": "09:00", "value": 132 },
+                        { "hour": "08:00", "value": 85 },
+                        { "hour": "07:00", "value": 82 },
+                        { "hour": "06:00", "value": 119 },
+                        { "hour": "05:00", "value": 90 },
+                        { "hour": "04:00", "value": 100 },
+                        { "hour": "03:00", "value": 102 },
+                        { "hour": "02:00", "value": 88 },
+                        { "hour": "01:00", "value": 81 },
+                        { "hour": "00:00", "value": 81 }
+                    ]
+                },
+                {
+                    "name": "arcon n3 pasillo",
+                    "WeeklyData": [
+                        { "hour": "13:00", "value": 109 },
+                        { "hour": "12:00", "value": 163 },
+                        { "hour": "11:00", "value": 164 },
+                        { "hour": "10:00", "value": 128 },
+                        { "hour": "09:00", "value": 123 },
+                        { "hour": "08:00", "value": 148 },
+                        { "hour": "07:00", "value": 138 },
+                        { "hour": "06:00", "value": 167 },
+                        { "hour": "05:00", "value": 124 },
+                        { "hour": "04:00", "value": 132 },
+                        { "hour": "03:00", "value": 124 },
+                        { "hour": "02:00", "value": 124 },
+                        { "hour": "01:00", "value": 124 },
+                        { "hour": "00:00", "value": 124 }
+                    ]
+                }
+
+                /*,
                 {
                     "name": "TCS",
                     "WeeklyData": [
@@ -43,7 +132,7 @@
                         { "week": "20 Apr 2015", "value": 1640 },
                         { "week": "27 Apr 2015", "value": 1750 }
                     ]
-                }
+                }*/
             ];
 
         function fnDrawMultiLineChart(Data, DivID, RevenueName) {
@@ -71,12 +160,12 @@
                 .ticks(10);
 
             // xData gives an array of distinct 'Weeks' for which trends chart is going to be made.
-            var xData = Data[0].WeeklyData.map(function (d) { return parseDate(new Date(d.week)); });
+            var xData = Data[0].WeeklyData.map(function (d) { return (d.hour); });
             //console.log(xData);
 
             var line = d3.svg.line()
                 //.interpolate("basis")
-                .x(function (d) { return x(parseDate(new Date(d.week))) + x.rangeBand() / 2; })
+                .x(function (d) { return x(d.hour); })
                 .y(function (d) { return y(d.value); });
 
             var svg = d3.select("#" + DivID).append("svg")
@@ -108,7 +197,7 @@
                 {
                     "class": "grid",
                     "x1": x(xData[0]),
-                    "x2": x(xData[xData.length - 1]) + x.rangeBand() / 2,
+                    "x2": x(xData[xData.length - 1]) ,
                     "y1": function (d) { return y(d); },
                     "y2": function (d) { return y(d); }
                 });
@@ -128,7 +217,7 @@
                             .data(Data)
                             .enter().append("g")
                             .attr("class", "segment");
-          
+
             segment.append("path")
                     .attr("class", "line")
                     .attr("id", function (d) { return d.name; })
@@ -140,7 +229,7 @@
                     .data(function (d) { return d.WeeklyData; })
                     .enter().append("circle")
                     .attr("r", 5)
-                    .attr("cx", function (d) { return x(parseDate(new Date(d.week))) + x.rangeBand() / 2; })
+                    .attr("cx", function (d) { return x(d.hour); })
                     .attr("cy", function (d) { return y(d.value); })
                     .style("stroke", "white")
                     .style("fill", function (d) { return color(this.parentNode.__data__.name); })
@@ -152,11 +241,11 @@
                         .style("top", (d3.event.pageY - 10) + "px");
                     })
                     .on("mouseout", mouseout);
-          
+
             segment.append("text")
                     .datum(function (d) { return { name: d.name, RevData: d.WeeklyData[d.WeeklyData.length - 1] }; })
                     .attr("transform", function (d) {
-                        var xpos = x(parseDate(new Date(d.RevData.week))) + x.rangeBand() / 2;
+                        var xpos = x(d.RevData.hour);
                         return "translate(" + xpos + "," + y(d.RevData.value) + ")";
                     })
                     .attr("x", 3)
@@ -164,7 +253,7 @@
                     .attr("class", "segmentText")
                     .attr("Segid", function (d) { return d.name; })
                     .text(function (d) { return d.name; });
-                               
+
             d3.selectAll(".segmentText").on("click", function (d) {
                 var tempId = d3.select(this).attr("Segid");
                 var flgVisible = d3.select("#" + tempId).attr("visible");
