@@ -178,7 +178,7 @@
 
         function fnDrawMultiLineChart(Data, DivID, RevenueName) {
             var margin = { top: 20, right: 80, bottom: 30, left: 50 },
-             width = 900 - margin.left - margin.right,
+             width = 1200 - margin.left - margin.right,
              height = 400 - margin.top - margin.bottom;
 
             var parseDate = d3.time.format("%d-%b");
@@ -188,7 +188,8 @@
 
             var y = d3.scale.linear()
                     .range([height, 0]);
-
+            var ny = d3.scale.linear()
+                    .range([-height,0]);
             var color = d3.scale.category10();
 
             var xAxis = d3.svg.axis()
@@ -198,12 +199,33 @@
             var yAxis = d3.svg.axis()
                 .scale(y)
                 .orient("left")
-                .ticks(10);
+                .tickSize(0)
+                .tickPadding(6);
+            var nyAxis= d3.svg.axis()
+                .scale(ny)
+                .ticks(2)
+                .orient("right");
 
             // xData gives an array of distinct 'Weeks' for which trends chart is going to be made.
             var xData = Data[0].WeeklyData.map(function (d) { return (d.hour); });
-            //console.log(xData);
-
+            //Cálculo de medias
+            var devices= new Array(6);
+            devices[0]=Data[0].WeeklyData.map(function (d) { return (d.value); })
+            devices[1]=Data[1].WeeklyData.map(function (d) { return (d.value); })
+            devices[2]=Data[2].WeeklyData.map(function (d) { return (d.value); })
+            devices[3]=Data[3].WeeklyData.map(function (d) { return (d.value); })
+            devices[4]=Data[4].WeeklyData.map(function (d) { return (d.value); })
+            devices[5]=Data[5].WeeklyData.map(function (d) { return (d.value); })
+            var sum_devices= [0,0,0,0,0,0];
+            for (i in devices){
+              for(j in devices[i]){
+                sum_devices[i]+=devices[i][j];
+              }
+            }
+            for (element in sum_devices){
+              sum_devices[element]/=24;
+              console.log(sum_devices[element]);
+            }
             var line = d3.svg.line()
                 //.interpolate("basis")
                 .x(function (d) { return x(d.hour); })
@@ -222,7 +244,7 @@
             var valueMax = d3.max(Data, function (r) { return d3.max(r.WeeklyData, function (d) { return d.value; }) });
             var valueMin = d3.min(Data, function (r) { return d3.min(r.WeeklyData, function (d) { return d.value; }) });
             y.domain([valueMin, valueMax]);
-
+            ny.domain([0,2]);
             //Drawing X Axis
             svg.append("g")
                     .attr("class", "x axis")
@@ -230,6 +252,11 @@
                     .call(xAxis);
 
             // Drawing Horizontal grid lines.
+            svg.append("g")
+                .attr("class", "-y axis")
+
+                .attr("transform", "translate(0 ,"+2*height+")")
+                .call(nyAxis)
             svg.append("g")
                 .attr("class", "GridX")
               .selectAll("line.grid").data(y.ticks()).enter()
@@ -242,6 +269,7 @@
                     "y1": function (d) { return y(d); },
                     "y2": function (d) { return y(d); }
                 });
+
             // Drawing Y Axis
             svg.append("g")
                 .attr("class", "y axis")
@@ -290,7 +318,7 @@
                         return "translate(" + xpos + "," + y(d.RevData.value) + ")";
                     })
                     .attr("x", 9)
-                    .attr("dy", ".35em")
+                    .attr("dy", ".1em")
                     .attr("class", "segmentText")
                     .style('fill','#aaa')
                     .attr("Segid", function (d) { return d.name; })
@@ -303,7 +331,7 @@
 
             function mouseover() {
                 divToolTip.transition()
-                    .duration(500)
+                    .duration(700)
                     .style("opacity", 1);
             }
             function mouseout() {
