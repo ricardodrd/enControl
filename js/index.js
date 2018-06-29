@@ -1,344 +1,510 @@
- var Data = [
-                {
-                    "name": "never alta n2",
-                    "WeeklyData": [
-                        { "hour": "00:00", "value": 78 },
-                        { "hour": "01:00", "value": 49 },
-                        { "hour": "02:00", "value": 46 },
-                        { "hour": "03:00", "value": 46 },
-                        { "hour": "04:00", "value": 45 },
-                        { "hour": "05:00", "value": 44 },
-                        { "hour": "06:00", "value": 44 },
-                        { "hour": "07:00", "value": 44 },
-                        { "hour": "08:00", "value": 48 },
-                        { "hour": "09:00", "value": 50 },
-                        { "hour": "10:00", "value": 50 },
-                        { "hour": "11:00", "value": 52 },
-                        { "hour": "12:00", "value": 52 },
-                        { "hour": "13:00", "value": 47 },
-                        { "hour": "14:00", "value": 45 },
-                        { "hour": "15:00", "value": 42 },
-                        { "hour": "16:00", "value": 54 },
-                        { "hour": "17:00", "value": 64 },
-                        { "hour": "18:00", "value": 43 },
-                        { "hour": "19:00", "value": 42 },
-                        { "hour": "20:00", "value": 41 },
-                        { "hour": "21:00", "value": 60 },
-                        { "hour": "22:00", "value": 59 },
-                        { "hour": "23:00", "value": 42 }
-                    ]
-                },
-                {
-                    "name": "nevera alta n1",
-                    "WeeklyData": [
-                        { "hour": "00:00", "value": 98 },
-                        { "hour": "01:00", "value": 96 },
-                        { "hour": "02:00", "value": 97 },
-                        { "hour": "03:00", "value": 97 },
-                        { "hour": "04:00", "value": 96 },
-                        { "hour": "05:00", "value": 95 },
-                        { "hour": "06:00", "value": 95 },
-                        { "hour": "07:00", "value": 51 },
-                        { "hour": "08:00", "value": 0 },
-                        { "hour": "09:00", "value": 65 },
-                        { "hour": "10:00", "value": 97 },
-                        { "hour": "11:00", "value": 102 },
-                        { "hour": "12:00", "value": 102 },
-                        { "hour": "13:00", "value": 124 },
-                        { "hour": "14:00", "value": 94 },
-                        { "hour": "15:00", "value": 114 },
-                        { "hour": "16:00", "value": 98 },
-                        { "hour": "17:00", "value": 105 },
-                        { "hour": "18:00", "value": 118 },
-                        { "hour": "19:00", "value": 90 },
-                        { "hour": "20:00", "value": 110 },
-                        { "hour": "21:00", "value": 112},
-                        { "hour": "22:00", "value": 89 },
-                        { "hour": "23:00", "value": 102 }
-                    ]
-                },
-                {
-                    "name": "arcon n4",
-                    "WeeklyData": [
-                      { "hour": "00:00", "value": 0 },
-                      { "hour": "01:00", "value": 0 },
-                      { "hour": "02:00", "value": 0 },
-                      { "hour": "03:00", "value": 0 },
-                      { "hour": "04:00", "value": 0 },
-                      { "hour": "05:00", "value": 0 },
-                      { "hour": "06:00", "value": 0 },
-                      { "hour": "07:00", "value": 17 },
-                      { "hour": "08:00", "value": 29 },
-                      { "hour": "09:00", "value": 28 },
-                      { "hour": "10:00", "value": 28 },
-                      { "hour": "11:00", "value": 28 },
-                      { "hour": "12:00", "value": 28 },
-                      { "hour": "13:00", "value": 28 },
-                      { "hour": "14:00", "value": 28 },
-                      { "hour": "15:00", "value": 29 },
-                      { "hour": "16:00", "value": 27 },
-                      { "hour": "17:00", "value": 28 },
-                      { "hour": "18:00", "value": 28 },
-                      { "hour": "19:00", "value": 28 },
-                      { "hour": "20:00", "value": 29 },
-                      { "hour": "21:00", "value": 27},
-                      { "hour": "22:00", "value": 12 },
-                      { "hour": "23:00", "value": 0 }
-                    ]
-                },
-                {
-                    "name": "arcon n2 final pasillo",
-                    "WeeklyData": [
-                      { "hour": "00:00", "value": 127 },
-                      { "hour": "01:00", "value": 107 },
-                      { "hour": "02:00", "value": 108 },
-                      { "hour": "03:00", "value": 106 },
-                      { "hour": "04:00", "value": 115 },
-                      { "hour": "05:00", "value": 167 },
-                      { "hour": "06:00", "value": 112 },
-                      { "hour": "07:00", "value": 92 },
-                      { "hour": "08:00", "value": 163 },
-                      { "hour": "09:00", "value": 128 },
-                      { "hour": "10:00", "value": 110 },
-                      { "hour": "11:00", "value": 141 },
-                      { "hour": "12:00", "value": 135 },
-                      { "hour": "13:00", "value": 169 },
-                      { "hour": "14:00", "value": 134 },
-                      { "hour": "15:00", "value": 174 },
-                      { "hour": "16:00", "value": 171 },
-                      { "hour": "17:00", "value": 167 },
-                      { "hour": "18:00", "value": 119 },
-                      { "hour": "19:00", "value": 155 },
-                      { "hour": "20:00", "value": 119 },
-                      { "hour": "21:00", "value": 147},
-                      { "hour": "22:00", "value": 118 },
-                      { "hour": "23:00", "value": 107 }
-                    ]
-                },
-                {
-                    "name": "arcon n1 final pasillo",
-                    "WeeklyData": [
-                      { "hour": "00:00", "value": 80 },
-                      { "hour": "01:00", "value": 91 },
-                      { "hour": "02:00", "value": 99 },
-                      { "hour": "03:00", "value": 97 },
-                      { "hour": "04:00", "value": 85 },
-                      { "hour": "05:00", "value": 83 },
-                      { "hour": "06:00", "value": 129 },
-                      { "hour": "07:00", "value": 128 },
-                      { "hour": "08:00", "value": 125 },
-                      { "hour": "09:00", "value": 98 },
-                      { "hour": "10:00", "value": 115 },
-                      { "hour": "11:00", "value": 127 },
-                      { "hour": "12:00", "value": 126 },
-                      { "hour": "13:00", "value": 85 },
-                      { "hour": "14:00", "value": 134 },
-                      { "hour": "15:00", "value": 134 },
-                      { "hour": "16:00", "value": 130 },
-                      { "hour": "17:00", "value": 128 },
-                      { "hour": "18:00", "value": 127 },
-                      { "hour": "19:00", "value": 126 },
-                      { "hour": "20:00", "value": 85 },
-                      { "hour": "21:00", "value": 96},
-                      { "hour": "22:00", "value": 114 },
-                      { "hour": "23:00", "value": 83 }
-                    ]
-                },
-                {
-                    "name": "arcon n3 pasillo",
-                    "WeeklyData": [
-                      { "hour": "00:00", "value": 124 },
-                      { "hour": "01:00", "value": 124 },
-                      { "hour": "02:00", "value": 125 },
-                      { "hour": "03:00", "value": 124 },
-                      { "hour": "04:00", "value": 125 },
-                      { "hour": "05:00", "value": 124},
-                      { "hour": "06:00", "value": 124 },
-                      { "hour": "07:00", "value": 125 },
-                      { "hour": "08:00", "value": 124 },
-                      { "hour": "09:00", "value": 125},
-                      { "hour": "10:00", "value": 132 },
-                      { "hour": "11:00", "value": 126 },
-                      { "hour": "12:00", "value": 125 },
-                      { "hour": "13:00", "value": 166},
-                      { "hour": "14:00", "value": 127 },
-                      { "hour": "15:00", "value": 163 },
-                      { "hour": "16:00", "value": 128 },
-                      { "hour": "17:00", "value": 128 },
-                      { "hour": "18:00", "value": 169 },
-                      { "hour": "19:00", "value": 124 },
-                      { "hour": "20:00", "value": 160},
-                      { "hour": "21:00", "value": 134},
-                      { "hour": "22:00", "value": 126 },
-                      { "hour": "23:00", "value": 125 }
+var daata = [
+  {
+    name: "never alta n2",
+    values: [
+      { date: "1", price: "78" },
+      { date: "2", price: "49" },
+      { date: "3", price: "46" },
+      { date: "4", price: "46" },
+      { date: "5", price: "45" },
+      { date: "6", price: "44" },
+      { date: "7", price: "44" },
+      { date: "8", price: "44" },
+      { date: "9", price: "48" },
+      { date: "10", price: "50" },
+      { date: "11", price: "50" },
+      { date: "12", price: "52" },
+      { date: "13", price: "52" },
+      { date: "14", price: "47" },
+      { date: "15", price: "45" },
+      { date: "16", price: "42" },
+      { date: "17", price: "54" },
+      { date: "18", price: "64" },
+      { date: "19", price: "43" },
+      { date: "20", price: "42" },
+      { date: "21", price: "41" },
+      { date: "22", price: "60" },
+      { date: "23", price: "59" },
+      { date: "24", price: "42" }
+    ]
+  },
+  {
+    name: "nevera alta n1",
+    values: [
+      { date: "1", price: "98" },
+      { date: "2", price: "96" },
+      { date: "3", price: "97" },
+      { date: "4", price: "97" },
+      { date: "5", price: "96" },
+      { date: "6", price: "95" },
+      { date: "7", price: "95" },
+      { date: "8", price: "51" },
+      { date: "9", price: "0" },
+      { date: "10", price: "65" },
+      { date: "11", price: "97" },
+      { date: "12", price: "102" },
+      { date: "13", price: "102" },
+      { date: "14", price: "124" },
+      { date: "15", price: "94" },
+      { date: "16", price: "114" },
+      { date: "17", price: "98" },
+      { date: "18", price: "105" },
+      { date: "19", price: "118" },
+      { date: "20", price: "90" },
+      { date: "21", price: "110" },
+      { date: "22", price: "112"},
+      { date: "23", price: "89" },
+      { date: "24", price: "102" }
+    ]
+  },
+  {
+    name: "arcon n4",
+    values: [
+      { date: "1", price: "0" },
+      { date: "2", price: "0" },
+      { date: "3", price: "0" },
+      { date: "4", price: "0" },
+      { date: "5", price: "0" },
+      { date: "6", price: "0" },
+      { date: "7", price: "0" },
+      { date: "8", price: "17" },
+      { date: "9", price: "29" },
+      { date: "10", price: "28" },
+      { date: "11", price: "28" },
+      { date: "12", price: "28" },
+      { date: "13", price: "28" },
+      { date: "14", price: "28" },
+      { date: "15", price: "28" },
+      { date: "16", price: "29" },
+      { date: "17", price: "27" },
+      { date: "18", price: "28" },
+      { date: "19", price: "28" },
+      { date: "20", price: "28" },
+      { date: "21", price: "29" },
+      { date: "22", price: "27"},
+      { date: "23", price: "12" },
+      { date: "24", price: "0" }
+    ]
+  },
+  {
+    name: "arcon n2 final pasillo",
+    values: [
+      { date: "1", price: "12" },
+      { date: "2", price: "107" },
+      { date: "3", price: "108" },
+      { date: "4", price: "106" },
+      { date: "5", price: "115" },
+      { date: "6", price: "167" },
+      { date: "7", price: "112" },
+      { date: "8", price: "92" },
+      { date: "9", price: "163" },
+      { date: "10", price: "128" },
+      { date: "11", price: "110" },
+      { date: "12", price: "141" },
+      { date: "13", price: "135" },
+      { date: "14", price: "169" },
+      { date: "15", price: "134" },
+      { date: "16", price: "174" },
+      { date: "17", price: "171" },
+      { date: "18", price: "167" },
+      { date: "19", price: "119" },
+      { date: "20", price: "155" },
+      { date: "21", price: "119" },
+      { date: "22", price: "147"},
+      { date: "23", price: "118" },
+      { date: "24", price: "107" }
+    ]
+  },
+  {
+    name: "arcon n1 final pasillo",
+    values: [
+      { date: "1", price: "80" },
+      { date: "2", price: "91" },
+      { date: "3", price: "99" },
+      { date: "4", price: "97" },
+      { date: "5", price: "85" },
+      { date: "6", price: "83" },
+      { date: "7", price: "129" },
+      { date: "8", price: "128" },
+      { date: "9", price: "125" },
+      { date: "10", price: "98" },
+      { date: "11", price: "115" },
+      { date: "12", price: "127" },
+      { date: "13", price: "126" },
+      { date: "14", price: "85" },
+      { date: "15", price: "134" },
+      { date: "16", price: "134" },
+      { date: "17", price: "130" },
+      { date: "18", price: "128" },
+      { date: "19", price: "127" },
+      { date: "20", price: "126" },
+      { date: "21", price: "85" },
+      { date: "22", price: "96"},
+      { date: "23", price: "114" },
+      { date: "24", price: "83" }
+    ]
+  },
+  {
+    name: "arcon n3 pasillo",
+    values: [
+      { date: "1", price: "124" },
+      { date: "2", price: "124" },
+      { date: "3", price: "125" },
+      { date: "4", price: "124" },
+      { date: "5", price: "125" },
+      { date: "6", price: "124"},
+      { date: "7", price: "124" },
+      { date: "8", price: "125" },
+      { date: "9", price: "124" },
+      { date: "10", price: "125"},
+      { date: "11", price: "132" },
+      { date: "12", price: "126" },
+      { date: "13", price: "125" },
+      { date: "14", price: "166"},
+      { date: "15", price: "127" },
+      { date: "16", price: "163" },
+      { date: "17", price: "128" },
+      { date: "18", price: "128" },
+      { date: "19", price: "169" },
+      { date: "20", price: "124" },
+      { date: "21", price: "160"},
+      { date: "22", price: "134"},
+      { date: "23", price: "126" },
+      { date: "24", price: "125" }
+    ]
+  }
+];
+var data2=[
+  {
+    name: "nevera alta n1/ arcon n2 final pasillo",
+    values: [
+      { date: "1", price: "0" },
+      { date: "2", price: "0" },
+      { date: "3", price: "0" },
+      { date: "4", price: "0" },
+      { date: "5", price: "0" },
+      { date: "6", price: "0"},
+      { date: "7", price: "0" },
+      { date: "8", price: "0" },
+      { date: "9", price: "0" },
+      { date: "10", price: "1"},
+      { date: "11", price: "3" },
+      { date: "12", price: "2" },
+      { date: "13", price: "4" },
+      { date: "14", price: "8"},
+      { date: "15", price: "8" },
+      { date: "16", price: "5" },
+      { date: "17", price: "1" },
+      { date: "18", price: "0" },
+      { date: "19", price: "2" },
+      { date: "20", price: "0" },
+      { date: "21", price: "0"},
+      { date: "22", price: "0"},
+      { date: "23", price: "0" },
+      { date: "24", price: "0" }
+    ]
+  },
+  {
+    name: "nevera_alta_1/ arcon n2 final pasillo",
+    values: [
+      { date: "1", price: "0" },
+      { date: "2", price: "0" },
+      { date: "3", price: "0" },
+      { date: "4", price: "0" },
+      { date: "5", price: "0" },
+      { date: "6", price: "0"},
+      { date: "7", price: "0" },
+      { date: "8", price: "0" },
+      { date: "9", price: "0" },
+      { date: "10", price: "0"},
+      { date: "11", price: "0" },
+      { date: "12", price: "1" },
+      { date: "13", price: "1" },
+      { date: "14", price: "2"},
+      { date: "15", price: "2" },
+      { date: "16", price: "3" },
+      { date: "17", price: "3" },
+      { date: "18", price: "3" },
+      { date: "19", price: "3" },
+      { date: "20", price: "1" },
+      { date: "21", price: "2"},
+      { date: "22", price: "2"},
+      { date: "23", price: "3" },
+      { date: "24", price: "0" }
+    ]
+  }
+]
 
-                    ]
-                }
-            ];
+var width = 800;
+var height = 400;
+var margin = 90;
+var duration = 250;
 
-        function fnDrawMultiLineChart(Data, DivID, RevenueName) {
-            var margin = { top: 20, right: 80, bottom: 30, left: 50 },
-             width = 1200 - margin.left - margin.right,
-             height = 400 - margin.top - margin.bottom;
+var lineOpacity = "0.25";
+var lineOpacityHover = "0.85";
+var otherLinesOpacityHover = "0.1";
+var lineStroke = "1.5px";
+var lineStrokeHover = "2.5px";
 
-            var parseDate = d3.time.format("%d-%b");
+var circleOpacity = '0.85';
+var circleOpacityOnLineHover = "0.25"
+var circleRadius = 3;
+var circleRadiusHover = 6;
 
-            var x = d3.scale.ordinal()
-                    .rangeRoundBands([0, width]);
 
-            var y = d3.scale.linear()
-                    .range([height, 0]);
-            var ny = d3.scale.linear()
-                    .range([-height,0]);
-            var color = d3.scale.category10();
+/* Format Data */
+var parseDate = d3.timeParse("%H");
+daata.forEach(function(d) {
+  d.values.forEach(function(d) {
+    d.date = parseDate(d.date);
+  });
+});
+data2.forEach(function(d) {
+  d.values.forEach(function(d) {
+    d.date = parseDate(d.date);
+    d.price = +d.price;
+  });
+});
 
-            var xAxis = d3.svg.axis()
-                .scale(x)
-                .orient("bottom");
 
-            var yAxis = d3.svg.axis()
-                .scale(y)
-                .orient("left")
-                .tickSize(0)
-                .tickPadding(6);
-            var nyAxis= d3.svg.axis()
-                .scale(ny)
-                .ticks(2)
-                .orient("right");
+/* Scale */
+var xScale = d3.scaleTime()
+  .domain(d3.extent(daata[0].values, d => d.date))
+  .range([0, width-margin]);
 
-            // xData gives an array of distinct 'Weeks' for which trends chart is going to be made.
-            var xData = Data[0].WeeklyData.map(function (d) { return (d.hour); });
-            //Cálculo de medias
-            var devices= new Array(6);
-            devices[0]=Data[0].WeeklyData.map(function (d) { return (d.value); })
-            devices[1]=Data[1].WeeklyData.map(function (d) { return (d.value); })
-            devices[2]=Data[2].WeeklyData.map(function (d) { return (d.value); })
-            devices[3]=Data[3].WeeklyData.map(function (d) { return (d.value); })
-            devices[4]=Data[4].WeeklyData.map(function (d) { return (d.value); })
-            devices[5]=Data[5].WeeklyData.map(function (d) { return (d.value); })
-            var sum_devices= [0,0,0,0,0,0];
-            for (i in devices){
-              for(j in devices[i]){
-                sum_devices[i]+=devices[i][j];
-              }
-            }
-            for (element in sum_devices){
-              sum_devices[element]/=24;
-              console.log(sum_devices[element]);
-            }
-            var line = d3.svg.line()
-                //.interpolate("basis")
-                .x(function (d) { return x(d.hour); })
-                .y(function (d) { return y(d.value); });
+var yScale = d3.scaleLinear()
+  .domain([0, 225])
+  .range([height-margin, 0]);
+var nyScale =  d3.scaleLinear()
+  .domain([0, d3.max(data2[0].values, d => d.price)])
+  .range([height-margin, 0]);
+var color = d3.scaleOrdinal(d3.schemeCategory10);
 
-            var svg = d3.select("#" + DivID).append("svg")
-                .attr("width", width + margin.left + margin.right)
-                .attr("height", height + margin.top + margin.bottom)
-                .append("g")
-                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+/* Add SVG */
+var svg = d3.select("#chart").append("svg")
+  .attr("width", (width+margin)+"px")
+  .attr("height", (height+margin)+"px")
+  .append('g')
+  .attr("transform", `translate(${margin}, ${margin})`);
 
-            color.domain(Data.map(function (d) { return d.name; }));
 
-            x.domain(xData);
+/* Add line into SVG */
+var line = d3.line()
+  .x(d => xScale(d.date))
+  .y(d => yScale(d.price))
+var line2 =d3.line()
+  .x(d=>xScale(d.date))
+  .y(d=> nyScale(d.price))
+let lines = svg.append('g')
+  .attr('class', 'lines');
+  /*
+  -----------------------------------
+GROUP 2 SELECT
+--------------------------------------
+  */
+lines.selectAll('.line-group2')
+    .data(data2).enter()
+    .append('g')
+    .attr('class', 'line-group2')
+    .on("mouseover", function(d, i) {
+        svg.append("text")
+          .attr("class", "title-text")
+          .style("fill", color(i))
+          .text(d.name)
+          .attr("text-anchor", "middle")
+          .attr("x", (width-margin)/2)
+          .attr("y", 5);
+      })
+    .on("mouseout", function(d) {
+        svg.select(".title-text").remove();
+      })
 
-            var valueMax = d3.max(Data, function (r) { return d3.max(r.WeeklyData, function (d) { return d.value; }) });
-            var valueMin = d3.min(Data, function (r) { return d3.min(r.WeeklyData, function (d) { return d.value; }) });
-            y.domain([valueMin, valueMax]);
-            ny.domain([0,2]);
-            //Drawing X Axis
-            svg.append("g")
-                    .attr("class", "x axis")
-                    .attr("transform", "translate(0," + height + ")")
-                    .call(xAxis);
+    .append('path')
+    .attr("width","px")
+    .attr('class', 'line')
+    .attr('d', d => line2(d.values))
+    .style('stroke', (d, i) => color(i))
+    .style('opacity', lineOpacity)
+    .style('fill',(d, i) => color(i))
+    .on("mouseover", function(d) {
+        d3.selectAll('.line')
+  					.style('opacity', otherLinesOpacityHover);
+        d3.selectAll('.circle')
+  					.style('opacity', circleOpacityOnLineHover);
+        d3.select(this)
+          .style('opacity', lineOpacityHover)
+          .style("stroke-width", lineStrokeHover)
+          .style("cursor", "pointer");
+      })
+    .on("mouseout", function(d) {
+        d3.selectAll(".line")
+  					.style('opacity', lineOpacity);
+        d3.selectAll('.circle')
+  					.style('opacity', circleOpacity);
+        d3.select(this)
+          .style("stroke-width", lineStroke)
+          .style("cursor", "none");
+      });
 
-            // Drawing Horizontal grid lines.
-            svg.append("g")
-                .attr("class", "-y axis")
+    /*
+----------------------------------------
+    GROUP1 SELECT
+-----------------------------------------
+    */
+lines.selectAll('.line-group')
+  .data(daata).enter()
+  .append('g')
+  .attr('class', 'line-group')
+  .on("mouseover", function(d, i) {
+      svg.append("text")
+        .attr("class", "title-text")
+        .style("fill", color(i))
+        .text(d.name)
+        .attr("text-anchor", "middle")
+        .attr("x", (width-margin)/2)
+        .attr("y", 5);
+    })
+  .on("mouseout", function(d) {
+      svg.select(".title-text").remove();
+    })
+  .append('path')
+  .attr('class', 'line')
+  .attr('d', d => line(d.values))
+  .style('stroke', (d, i) => color(i))
+  .style('opacity', lineOpacity)
+  .on("mouseover", function(d) {
+      d3.selectAll('.line')
+					.style('opacity', otherLinesOpacityHover);
+      d3.selectAll('.circle')
+					.style('opacity', circleOpacityOnLineHover);
+      d3.select(this)
+        .style('opacity', lineOpacityHover)
+        .style("stroke-width", lineStrokeHover)
+        .style("cursor", "pointer");
+    })
+  .on("mouseout", function(d) {
+      d3.selectAll(".line")
+					.style('opacity', lineOpacity);
+      d3.selectAll('.circle')
+					.style('opacity', circleOpacity);
+      d3.select(this)
+        .style("stroke-width", lineStroke)
+        .style("cursor", "none");
+    });
 
-                .attr("transform", "translate(0 ,"+2*height+")")
-                .call(nyAxis)
-            svg.append("g")
-                .attr("class", "GridX")
-              .selectAll("line.grid").data(y.ticks()).enter()
-                .append("line")
-                .attr(
-                {
-                    "class": "grid",
-                    "x1": x(xData[0]),
-                    "x2": x(xData[xData.length - 1]) ,
-                    "y1": function (d) { return y(d); },
-                    "y2": function (d) { return y(d); }
-                });
 
-            // Drawing Y Axis
-            svg.append("g")
-                .attr("class", "y axis")
-                .call(yAxis)
-                .append("text")
-                    .attr("transform", "rotate(-90)")
-                    .attr("y", 20)
-                    .attr("dy", ".91em")
-                    .style("text-anchor", "end")
-                    .text(RevenueName);
+/* Add circles in the line */
+lines.selectAll("circle-group")
+  .data(daata).enter()
+  .append("g")
+  .style("fill", (d, i) => color(i))
+  .selectAll("circle")
+  .data(d => d.values).enter()
+  .append("g")
+  .attr("class", "circle")
+  .on("mouseover", function(d) {
+      d3.select(this)
+        .style("cursor", "pointer")
+        .append("text")
+        .attr("class", "text")
+        .text(`${d.price}`)
+        .attr("x", d => xScale(d.date) + 5)
+        .attr("y", d => yScale(d.price) - 10);
+    })
+  .on("mouseout", function(d) {
+      d3.select(this)
+        .style("cursor", "none")
+        .transition()
+        .duration(duration)
+        .selectAll(".text").remove();
+    })
+  .append("circle")
+  .attr("cx", d => xScale(d.date))
+  .attr("cy", d => yScale(d.price))
+  .attr("r", circleRadius)
+  .style('opacity', circleOpacity)
+  .on("mouseover", function(d) {
+        d3.select(this)
+          .transition()
+          .duration(duration)
+          .attr("r", circleRadiusHover);
+      })
+    .on("mouseout", function(d) {
+        d3.select(this)
+          .transition()
+          .duration(duration)
+          .attr("r", circleRadius);
+      });
 
-            // Drawing Lines for each segments
-            var segment = svg.selectAll(".segment")
-                            .data(Data)
-                            .enter().append("g")
-                            .attr("class", "segment");
 
-            segment.append("path")
-                    .attr("class", "line")
-                    .attr("id", function (d) { return d.name; })
-                    .attr("visible",1)
-                    .attr("d", function (d) { return line(d.WeeklyData); })
-                    .style("stroke", function (d) { return color(d.name); });
-                        // Creating Dots on line
-            segment.selectAll("dot")
-                    .data(function (d) { return d.WeeklyData; })
-                    .enter().append("circle")
-                    .attr("r", 5)
-                    .attr("cx", function (d) { return x(d.hour); })
-                    .attr("cy", function (d) { return y(d.value); })
-                    .style("stroke", "white")
-                    .style("fill", function (d) { return color(this.parentNode.__data__.name); })
-                    .on("mouseover", mouseover)
-                    .on("mousemove", function (d) {
-                        divToolTip
-                        .text(this.parentNode.__data__.name +" : "+ d.value)
-                        .style("left", (d3.event.pageX + 15) + "px")
-                        .style("top", (d3.event.pageY - 10) + "px");
-                    })
-                    .on("mouseout", mouseout);
+/* Add Axis into SVG */
+var xAxis = d3.axisBottom(xScale).ticks(24);
+var yAxis = d3.axisLeft(yScale).ticks(25);
+var nyAxis =d3.axisRight(nyScale).ticks(8);
+svg.append("g")
+  .attr("class", "x axis")
+  .attr("transform", `translate(0, ${height-margin})`)
+  .call(xAxis);
 
-            segment.append("text")
-                    .datum(function (d) { return { name: d.name, RevData: d.WeeklyData[d.WeeklyData.length - 1] }; })
-                    .attr("transform", function (d) {
-                        var xpos = x(d.RevData.hour);
-                        return "translate(" + xpos + "," + y(d.RevData.value) + ")";
-                    })
-                    .attr("x", 9)
-                    .attr("dy", ".1em")
-                    .attr("class", "segmentText")
-                    .style('fill','#aaa')
-                    .attr("Segid", function (d) { return d.name; })
-                    .text(function (d) { return d.name; });
+svg.append("g")
+  .attr("class", "y axis")
+  .call(yAxis)
+  .append('text')
+  .attr("y", 15)
+  .attr("transform", "rotate(-90)")
+  .attr("fill", "#000")
+  .text("Wh");
+svg.append("g")
+    .attr("class", "y axis")
+    .attr("transform","translate("+720+",0)")
+    .call(nyAxis)
+    .append('text')
+    .attr("y", 15)
+    .attr("fill", "#000")
+    .text("Mediciones");
 
-             // Adding Tooltip
-            var divToolTip = d3.select("body").append("div")
-                        .attr("class", "tooltip")
-                        .style("opacity", 1e-6);
+    var divToolTip = d3.select("body").append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 1e-6);
 
-            function mouseover() {
-                divToolTip.transition()
-                    .duration(700)
-                    .style("opacity", 1);
-            }
-            function mouseout() {
-                divToolTip.transition()
-                    .duration(500)
-                    .style("opacity", 1e-6);
-            }
-        }
-// Calling function
-fnDrawMultiLineChart(Data, "divChartTrends", "Wh");
+    function mouseover() {
+        divToolTip.transition()
+            .duration(700)
+            .style("opacity", 1);
+    }
+    function mouseout() {
+        divToolTip.transition()
+            .duration(500)
+            .style("opacity", 1e-6);
+    }
+
+    /*
+    ----------------------------------------
+    */
+
+    var legendRectSize = 18;                                  // NEW
+           var legendSpacing = 4;
+    var legend = d3.select('svg')
+    var legend = svg.selectAll('.legend')                     // NEW
+              .data(color.domain())                                   // NEW
+              .enter()                                                // NEW
+              .append('g')                                            // NEW
+              .attr('class', 'legend')                                // NEW
+              .attr('transform', function(d, i) {                     // NEW
+                var height = legendRectSize + legendSpacing;          // NEW
+                var offset =  height * color.domain().length / 2;     // NEW
+                var horz = -2 * legendRectSize;                       // NEW
+                var vert = Math.floor(i/3) * height - offset;                       // NEW
+                return 'translate(' + i%3 *80 + ',' +Math.floor(i/3) * 22 + ')';        // NEW
+              });                                                     // NEW
+
+            legend.append('rect')                                     // NEW
+              .attr('width', legendRectSize)                          // NEW
+              .attr('height', legendRectSize)                         // NEW
+              .style('fill', color)                                   // NEW
+              .style('stroke', color);                                // NEW
+
+            legend.append('text')                                     // NEW
+              .attr('x', legendRectSize + legendSpacing)              // NEW
+              .attr('y', legendRectSize - legendSpacing)              // NEW
+              .text(function(d) { console.log(d.value);return (d.value); });
